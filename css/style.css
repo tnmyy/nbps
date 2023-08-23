@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 1rem;
+  background: var(--light);
+  box-shadow: 0 11px 10px 0 #a3a3a3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.schlLogo > img {
+  width: 100px;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList > a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.navLink {
+  margin: 0 1rem;
+  list-style: none;
+  font-size: var(--pFont);
+}
+
+/* Home */
+
+#home {
+  background: url(../img/nbps.jpg);
+  height: 100%;
+  color: var(--light);
+  text-align: center;
+  padding: 10rem;
+}
