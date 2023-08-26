@@ -4,11 +4,14 @@
   box-sizing: border-box;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  transition: var(--transition);
 }
 
 header {
   background: var(--light);
   box-shadow: 0 11px 10px 0 #a3a3a3;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -34,7 +37,7 @@ nav {
 
 .navList > a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--themeDark);
 }
 
 .navLink {
@@ -76,7 +79,89 @@ nav {
 
 .homeBtn > button {
   font-size: var(--pFont);
-  padding: 0.5rem;
+  font-weight: bolder;
+  padding: 0.8rem 1.5rem;
+  margin: 0.3rem;
   border: none;
   border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.homeBtn > button:nth-child(1) {
+  background: var(--theme);
+  color: var(--light);
+}
+
+.homeBtn > button:nth-child(1):hover {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.homeBtn > button:nth-child(2) {
+  background: var(--themeLight);
+}
+
+.homeBtn > button:nth-child(2):hover {
+  background: var(--light);
+}
+
+/* Features */
+
+#features {
+  margin: var(--sectionMargin);
+  text-align: center;
+}
+
+#features > h1 {
+  font-size: var(--hFont);
+  color: var(--themeDark);
+}
+
+#features > p {
+  font-size: var(--pFont);
+  margin: 0.5rem;
+}
+
+/* Feature Cards */
+
+#featureCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  place-items: center;
+}
+
+.card {
+  background: var(--gray);
+  margin: 0.5rem;
+  min-width: 30vw;
+  padding: 2rem;
+  cursor: context-menu;
+}
+
+.featureHeading {
+  font-size: var(--h2Font);
+  margin-bottom: 0.5rem;
+}
+
+.featureDescription {
+  font-size: var(--p2Font);
+}
+
+/* Rankers */
+
+#rankers {
+  margin: var(--sectionMargin);
+  text-align: center;
+}
+
+#rankers > h1 {
+  font-size: var(--hFont);
+  color: var(--themeDark);
+}
+
+#rankers > p {
+  font-size: var(--pFont);
+  margin: 0.5rem;
 }

@@ -1,6 +1,16 @@
 :root {
   --light: #fff;
+  --themeDark: #231f52;
+  --themeLight: #ffb055;
+  --theme: #0139a0;
   --dark: #000;
-  --pFont: 1.2rem;
+  --gray: #faf8ff;
+
+  --pFont: 1.25rem;
+  --p2Font: 1.1rem;
+  --h2Font: 1.5rem;
   --hFont: 3rem;
+  --transition: 0.3s all ease-in-out;
+
+  --sectionMargin: 5rem 0 1rem 0;
 }
