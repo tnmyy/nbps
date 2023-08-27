@@ -46,6 +46,10 @@ nav {
   font-size: var(--pFont);
 }
 
+.navLink > i:nth-child(1) {
+  font-size: var(--h2Font);
+}
+
 /* Home */
 
 #home {
@@ -149,6 +153,11 @@ nav {
   font-size: var(--p2Font);
 }
 
+.featureSvg {
+  margin-bottom: 1rem;
+  font-size: var(--hFont);
+}
+
 /* Rankers */
 
 #rankers {
@@ -164,4 +173,44 @@ nav {
 #rankers > p {
   font-size: var(--pFont);
   margin: 0.5rem;
+}
+
+.toppers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  place-items: center;
+}
+
+.rankerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  background: var(--gray);
+  padding: 0.5rem;
+}
+
+.rankerImg {
+  width: 100px;
+}
+
+.rankerMarks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+  background: var(--purple);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  font-weight: bolder;
+}
+
+.rankerName {
+  font-weight: 600;
+  font-size: var(--p2Font);
+  color: var(--themeDark);
 }
