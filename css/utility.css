@@ -5,10 +5,12 @@
   --theme: #0139a0;
   --dark: #000;
   --gray: #faf8ff;
+  --purple: #494989;
 
   --pFont: 1.25rem;
   --p2Font: 1.1rem;
-  --h2Font: 1.5rem;
+  --h2Font: 1.75rem;
+  --h3Font: 1.5rem;
   --hFont: 3rem;
   --transition: 0.3s all ease-in-out;
 
