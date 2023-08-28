@@ -177,8 +177,8 @@ nav {
 
 .toppers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 0.5rem; */
   align-items: center;
   place-items: center;
 }
@@ -190,11 +190,16 @@ nav {
   flex-direction: column;
   margin: 1rem;
   background: var(--gray);
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .rankerImg {
-  width: 100px;
+  width: 20rem;
+  padding-bottom: 2rem;
+}
+
+.rankerInfo {
+  position: relative;
 }
 
 .rankerMarks {
@@ -203,10 +208,21 @@ nav {
   align-items: center;
   color: var(--light);
   background: var(--purple);
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
   font-weight: bolder;
+  font-size: var(--pFont);
+  position: absolute;
+  left: 150%;
+  bottom: 100%;
+}
+
+.rankerBio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .rankerName {
