@@ -12,6 +12,7 @@ header {
   box-shadow: 0 11px 10px 0 #a3a3a3;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 nav {
@@ -176,11 +177,15 @@ nav {
 }
 
 .toppers {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
   /* gap: 0.5rem; */
+  /* align-items: center; */
+  /* place-items: center; */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  place-items: center;
+  flex-wrap: wrap;
 }
 
 .rankerCard {
@@ -191,15 +196,19 @@ nav {
   margin: 1rem;
   background: var(--gray);
   padding-bottom: 0.5rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.rankerCard:hover {
+  transform: scale(1.08);
+  z-index: 1;
 }
 
 .rankerImg {
   width: 20rem;
+  border-radius: 1rem;
   padding-bottom: 2rem;
-}
-
-.rankerInfo {
-  position: relative;
 }
 
 .rankerMarks {
@@ -208,25 +217,72 @@ nav {
   align-items: center;
   color: var(--light);
   background: var(--purple);
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0 0.5rem;
   border-radius: 100%;
   font-weight: bolder;
   font-size: var(--pFont);
   position: absolute;
-  left: 150%;
-  bottom: 100%;
+  left: 73%;
+  top: 68%;
 }
 
 .rankerBio {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
+  width: 100%;
+  padding: 0.5rem 1rem;
 }
 
 .rankerName {
   font-weight: 600;
   font-size: var(--p2Font);
   color: var(--themeDark);
+}
+
+/* Teachers */
+
+.teachers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.staffCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--cream);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.staffImg {
+  border-radius: 100%;
+  box-shadow: 0px 0px 9px 11px #f7f0fe;
+  width: 10rem;
+}
+
+.staffInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.staffInfo > h2 {
+  color: var(--theme);
+  font-size: var(--h2Font);
+}
+
+.staffInfo > p {
+  color: var(--theme);
+  font-size: var(--pFont);
 }
