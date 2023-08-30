@@ -245,6 +245,20 @@ nav {
 
 /* Teachers */
 
+#staff {
+  text-align: center;
+  margin: var(--sectionMargin);
+}
+
+#staff > h1 {
+  font-size: var(--hFont);
+  color: var(--themeDark);
+}
+
+#staff > p {
+  font-size: var(--pFont);
+}
+
 .teachers {
   display: flex;
   justify-content: center;
@@ -261,6 +275,7 @@ nav {
   background: var(--cream);
   padding: 1rem;
   margin: 1rem;
+  margin-top: 2rem;
 }
 
 .staffImg {
@@ -278,11 +293,40 @@ nav {
 }
 
 .staffInfo > h2 {
-  color: var(--theme);
+  color: var(--themeDark);
   font-size: var(--h2Font);
 }
 
 .staffInfo > p {
-  color: var(--theme);
+  color: var(--themeDark);
   font-size: var(--pFont);
+}
+
+.staffSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.staffSocial > a {
+  text-decoration: none;
+  color: var(--themeDark);
+  margin-top: 0.5rem;
+}
+
+.staffSocial > a > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--pFont);
+  border: 2px solid var(--dark);
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0.5rem;
+}
+
+.staffSocial > a:hover > i {
+  color: var(--light);
+  background: var(--theme);
 }
